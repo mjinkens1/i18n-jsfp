@@ -1,3 +1,4 @@
+import './lib/redux';
 import functions from './lib/functions';
 
 export * from './lib/functions';
