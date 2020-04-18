@@ -1,0 +1,7 @@
+
+test: addTranslations-immer
+load: 150
+iterations: 2
+test time: 0.2244879350066185s
+time per iteration (avg): 0.11224396750330926s
+time per operation (avg): 0.7482931166887283ms

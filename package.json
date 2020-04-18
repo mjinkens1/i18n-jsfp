@@ -1,12 +1,13 @@
 {
   "name": "i18n-jsfp",
   "version": "0.1.0",
-  "main": "./dist/index.js",
+  "main": "./index.js",
   "sideEffects": false,
   "scripts": {
     "build": "webpack --progress",
     "build:prod": "webpack --mode=production --progress",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "benchmark": "NODE_ENV=production node --prof --no-logfile-per-isolate --logfile=./benchmark/out/profile.log ./benchmark/index.js && node --prof-process ./profile.log > ./benchmark/out/processed.txt"
   },
   "author": "",
   "license": "ISC",
@@ -22,7 +23,9 @@
   "dependencies": {
     "immer": "^6.0.3",
     "lodash": "^4.17.15",
+    "ramda": "^0.27.0",
     "redux": "^4.0.5",
+    "redux-devtools-extension": "^2.13.8",
     "yup": "^0.28.3"
   },
   "devDependencies": {
@@ -30,7 +33,9 @@
     "@babel/preset-env": "^7.9.5",
     "babel-loader": "^8.1.0",
     "clean-webpack-plugin": "^3.0.0",
+    "mkdirp": "^1.0.4",
     "webpack": "^4.42.1",
-    "webpack-cli": "^3.3.11"
+    "webpack-cli": "^3.3.11",
+    "writefile": "^0.2.8"
   }
 }
