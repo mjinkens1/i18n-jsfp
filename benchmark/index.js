@@ -28,11 +28,11 @@ const translations = {
   },
 };
 
-const TEST_CASE = 'addTranslations-js';
+const TEST_CASE = 'addTranslations-ramda';
 const FILENAME = `${TEST_CASE}.benchmark.txt`;
 const OUT_PATH = join(__dirname, '/out');
-const LOAD = 150;
-const TEST_COUNT = 20;
+const LOAD = 500;
+const TEST_COUNT = 1000;
 
 const iterate = count => {
   for (let i = 0; i < count; ++i) {
@@ -54,6 +54,7 @@ const test = (testCount, load) => {
   return { elapsedTime, timePerOp };
 };
 
+console.group('running...');
 const { elapsedTime, timePerOp } = test(TEST_COUNT, LOAD);
 
 const data = new Uint8Array(

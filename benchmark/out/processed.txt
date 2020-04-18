@@ -1,218 +1,120 @@
+Testing v8 version different from logging version
 Statistical profiling result from ./profile.log, (497 ticks, 13 unaccounted, 0 excluded).
 
  [Shared libraries]:
    ticks  total  nonlib   name
+    229   46.1%          /Users/mattjinkens/.nvm/versions/node/v10.17.0/bin/node
      10    2.0%          /usr/lib/system/libsystem_platform.dylib
-      7    1.4%          /usr/lib/system/libsystem_pthread.dylib
+      4    0.8%          /usr/lib/system/libsystem_pthread.dylib
       3    0.6%          /usr/lib/system/libsystem_kernel.dylib
       2    0.4%          /usr/lib/system/libsystem_malloc.dylib
       1    0.2%          /usr/lib/libc++abi.dylib
 
  [JavaScript]:
    ticks  total  nonlib   name
-     26    5.2%    5.5%  Builtin: KeyedLoadIC_Megamorphic
-     23    4.6%    4.9%  LazyCompile: *<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:3600:31
-     22    4.4%    4.6%  Builtin: KeyedStoreIC_Megamorphic
-     13    2.6%    2.7%  LazyCompile: *keysIn /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:13333:20
-     10    2.0%    2.1%  Builtin: LoadIC
-     10    2.0%    2.1%  Builtin: KeyedLoadIC
-      9    1.8%    1.9%  Builtin: InterpreterEntryTrampoline
-      8    1.6%    1.7%  Builtin: RecordWrite
-      7    1.4%    1.5%  Builtin: HasProperty
-      5    1.0%    1.1%  Builtin: KeyedStoreIC
-      4    0.8%    0.8%  Builtin: ArgumentsAdaptorTrampoline
-      3    0.6%    0.6%  LazyCompile: *stackSet /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:2350:22
-      3    0.6%    0.6%  LazyCompile: *isPlainObject /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:12036:27
-      2    0.4%    0.4%  LazyCompile: ~u /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/dist/index.js:1:2811
-      2    0.4%    0.4%  LazyCompile: ~baseKeysIn /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:3502:24
-      2    0.4%    0.4%  LazyCompile: *stackDelete /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:2306:25
-      2    0.4%    0.4%  LazyCompile: *baseIsArguments /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:3227:29
-      2    0.4%    0.4%  LazyCompile: *assignMergeValue /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:2454:30
-      2    0.4%    0.4%  Builtin: ToObject
-      2    0.4%    0.4%  Builtin: StrictEqual
-      2    0.4%    0.4%  Builtin: ObjectPrototypeHasOwnProperty
-      2    0.4%    0.4%  Builtin: ForInFilter
-      2    0.4%    0.4%  Builtin: ForInEnumerate
-      2    0.4%    0.4%  Builtin: CreateObjectWithoutProperties
-      2    0.4%    0.4%  Builtin: CompileLazy
-      2    0.4%    0.4%  Builtin: CallFunction_ReceiverIsAny
-      1    0.2%    0.2%  Script: ~<anonymous> buffer.js:1:11
-      1    0.2%    0.2%  LazyCompile: ~w /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/immer/dist/immer.cjs.production.min.js:1:2007
-      1    0.2%    0.2%  LazyCompile: ~validateOffsetLengthRead internal/fs/utils.js:408:34
-      1    0.2%    0.2%  LazyCompile: ~tryCreateBuffer fs.js:313:25
-      1    0.2%    0.2%  LazyCompile: ~stackGet /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:2323:22
-      1    0.2%    0.2%  LazyCompile: ~realpathSync fs.js:1380:22
-      1    0.2%    0.2%  LazyCompile: ~o /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/dist/index.js:1:1970
-      1    0.2%    0.2%  LazyCompile: ~n /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/dist/index.js:1:1748
-      1    0.2%    0.2%  LazyCompile: ~c /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/dist/index.js:1:2589
-      1    0.2%    0.2%  LazyCompile: ~basename path.js:1286:30
-      1    0.2%    0.2%  LazyCompile: ~baseKeys /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:3482:22
-      1    0.2%    0.2%  LazyCompile: ~Module.require internal/modules/cjs/loader.js:686:36
-      1    0.2%    0.2%  LazyCompile: ~Module.load internal/modules/cjs/loader.js:645:33
-      1    0.2%    0.2%  LazyCompile: ~Module._nodeModulePaths internal/modules/cjs/loader.js:414:37
-      1    0.2%    0.2%  LazyCompile: ~Module._findPath internal/modules/cjs/loader.js:275:28
-      1    0.2%    0.2%  LazyCompile: ~Join native array.js:112:14
-      1    0.2%    0.2%  LazyCompile: ~J /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/dist/index.js:1:8565
-      1    0.2%    0.2%  LazyCompile: ~<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:4897:22
-      1    0.2%    0.2%  LazyCompile: ~<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:4835:31
-      1    0.2%    0.2%  LazyCompile: ~<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/dist/index.js:1:2138
-      1    0.2%    0.2%  LazyCompile: *safeGet /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:6609:21
-      1    0.2%    0.2%  LazyCompile: *normalizeString path.js:52:25
-      1    0.2%    0.2%  LazyCompile: *initCloneObject /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:6167:29
-      1    0.2%    0.2%  Eval: ~<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/benchmark/index.js:1:1
-      1    0.2%    0.2%  Builtin: Typeof
-      1    0.2%    0.2%  Builtin: StoreIC_Uninitialized
-      1    0.2%    0.2%  Builtin: ObjectPrototypeToString
-      1    0.2%    0.2%  Builtin: ObjectConstructor
-      1    0.2%    0.2%  Builtin: GrowFastSmiOrObjectElements
-      1    0.2%    0.2%  Builtin: FastNewClosure
-      1    0.2%    0.2%  Builtin: Call_ReceiverIsAny
-      1    0.2%    0.2%  Builtin: CEntry_Return1_DontSaveFPRegs_ArgvOnStack_BuiltinExit
-      1    0.2%    0.2%  Builtin: ArrayPrototypePush
+     26    5.2%   10.5%  Builtin: KeyedLoadIC_Megamorphic
+     23    4.6%    9.3%  LazyCompile: *<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:3600:31
+     22    4.4%    8.9%  Builtin: KeyedStoreIC_Megamorphic
+     13    2.6%    5.2%  LazyCompile: *keysIn /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:13333:20
+     10    2.0%    4.0%  Builtin: LoadIC
+     10    2.0%    4.0%  Builtin: KeyedLoadIC
+      9    1.8%    3.6%  Builtin: InterpreterEntryTrampoline
+      8    1.6%    3.2%  Builtin: RecordWrite
+      7    1.4%    2.8%  Builtin: HasProperty
+      5    1.0%    2.0%  Builtin: KeyedStoreIC
+      4    0.8%    1.6%  Builtin: ArgumentsAdaptorTrampoline
+      3    0.6%    1.2%  LazyCompile: *stackSet /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:2350:22
+      3    0.6%    1.2%  LazyCompile: *isPlainObject /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:12036:27
+      2    0.4%    0.8%  LazyCompile: ~u /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/dist/index.js:1:2811
+      2    0.4%    0.8%  LazyCompile: ~baseKeysIn /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:3502:24
+      2    0.4%    0.8%  LazyCompile: *stackDelete /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:2306:25
+      2    0.4%    0.8%  LazyCompile: *baseIsArguments /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:3227:29
+      2    0.4%    0.8%  LazyCompile: *assignMergeValue /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:2454:30
+      2    0.4%    0.8%  Builtin: ToObject
+      2    0.4%    0.8%  Builtin: StrictEqual
+      2    0.4%    0.8%  Builtin: ObjectPrototypeHasOwnProperty
+      2    0.4%    0.8%  Builtin: ForInFilter
+      2    0.4%    0.8%  Builtin: ForInEnumerate
+      2    0.4%    0.8%  Builtin: CreateObjectWithoutProperties
+      2    0.4%    0.8%  Builtin: CompileLazy
+      2    0.4%    0.8%  Builtin: CallFunction_ReceiverIsAny
+      1    0.2%    0.4%  Script: ~<anonymous> buffer.js:1:11
+      1    0.2%    0.4%  LazyCompile: ~w /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/immer/dist/immer.cjs.production.min.js:1:2007
+      1    0.2%    0.4%  LazyCompile: ~validateOffsetLengthRead internal/fs/utils.js:408:34
+      1    0.2%    0.4%  LazyCompile: ~tryCreateBuffer fs.js:313:25
+      1    0.2%    0.4%  LazyCompile: ~stackGet /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:2323:22
+      1    0.2%    0.4%  LazyCompile: ~realpathSync fs.js:1380:22
+      1    0.2%    0.4%  LazyCompile: ~o /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/dist/index.js:1:1970
+      1    0.2%    0.4%  LazyCompile: ~n /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/dist/index.js:1:1748
+      1    0.2%    0.4%  LazyCompile: ~c /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/dist/index.js:1:2589
+      1    0.2%    0.4%  LazyCompile: ~basename path.js:1286:30
+      1    0.2%    0.4%  LazyCompile: ~baseKeys /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:3482:22
+      1    0.2%    0.4%  LazyCompile: ~Module.require internal/modules/cjs/loader.js:686:36
+      1    0.2%    0.4%  LazyCompile: ~Module.load internal/modules/cjs/loader.js:645:33
+      1    0.2%    0.4%  LazyCompile: ~Module._nodeModulePaths internal/modules/cjs/loader.js:414:37
+      1    0.2%    0.4%  LazyCompile: ~Module._findPath internal/modules/cjs/loader.js:275:28
+      1    0.2%    0.4%  LazyCompile: ~Join native array.js:112:14
+      1    0.2%    0.4%  LazyCompile: ~J /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/dist/index.js:1:8565
+      1    0.2%    0.4%  LazyCompile: ~<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:4897:22
+      1    0.2%    0.4%  LazyCompile: ~<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:4835:31
+      1    0.2%    0.4%  LazyCompile: ~<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/dist/index.js:1:2138
+      1    0.2%    0.4%  LazyCompile: *safeGet /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:6609:21
+      1    0.2%    0.4%  LazyCompile: *normalizeString path.js:52:25
+      1    0.2%    0.4%  LazyCompile: *initCloneObject /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:6167:29
+      1    0.2%    0.4%  Eval: ~<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/benchmark/index.js:1:1
+      1    0.2%    0.4%  Builtin: Typeof
+      1    0.2%    0.4%  Builtin: StoreIC_Uninitialized
+      1    0.2%    0.4%  Builtin: ObjectPrototypeToString
+      1    0.2%    0.4%  Builtin: ObjectConstructor
+      1    0.2%    0.4%  Builtin: GrowFastSmiOrObjectElements
+      1    0.2%    0.4%  Builtin: FastNewClosure
+      1    0.2%    0.4%  Builtin: Call_ReceiverIsAny
+      1    0.2%    0.4%  Builtin: CEntry_Return1_DontSaveFPRegs_ArgvOnStack_BuiltinExit
+      1    0.2%    0.4%  Builtin: ArrayPrototypePush
 
  [C++]:
    ticks  total  nonlib   name
-     22    4.4%    4.6%  t v8::internal::(anonymous namespace)::NativeCodeFunctionSourceString(v8::internal::Handle<v8::internal::SharedFunctionInfo>)
-     22    4.4%    4.6%  T node::contextify::ContextifyScript::New(v8::FunctionCallbackInfo<v8::Value> const&)
-     22    4.4%    4.6%  T node::contextify::ContextifyContext::CompileFunction(v8::FunctionCallbackInfo<v8::Value> const&)
-     16    3.2%    3.4%  T v8::internal::IncrementalMarking::WhiteToGreyAndPush(v8::internal::HeapObject*)
-     11    2.2%    2.3%  t void v8::internal::Worklist<v8::internal::HeapObject*, 64>::Update<v8::internal::IncrementalMarking::UpdateMarkingWorklistAfterScavenge()::$_0>(v8::internal::IncrementalMarking::UpdateMarkingWorklistAfterScavenge()::$_0)
-     10    2.0%    2.1%  T _flock
-      8    1.6%    1.7%  t node::fs::InternalModuleStat(v8::FunctionCallbackInfo<v8::Value> const&)
-      8    1.6%    1.7%  T v8::internal::JSFunction::ToString(v8::internal::Handle<v8::internal::JSFunction>)
-      6    1.2%    1.3%  t v8::internal::Heap::AllocateRaw(int, v8::internal::AllocationSpace, v8::internal::AllocationAlignment)
-      6    1.2%    1.3%  T v8::internal::Factory::NewRawOneByteString(int, v8::internal::PretenureFlag)
-      5    1.0%    1.1%  t void v8::internal::String::WriteToFlat<unsigned char>(v8::internal::String*, unsigned char*, int, int)
-      4    0.8%    0.8%  t v8::internal::Scavenger::ScavengeObject(v8::internal::HeapObjectReference**, v8::internal::HeapObject*)
-      4    0.8%    0.8%  T v8::internal::String::SlowFlatten(v8::internal::Handle<v8::internal::ConsString>, v8::internal::PretenureFlag)
-      3    0.6%    0.6%  t v8::internal::HashTable<v8::internal::NameDictionary, v8::internal::NameDictionaryShape>::Rehash(v8::internal::NameDictionary*)
-      3    0.6%    0.6%  t __malloc_initialize
-      3    0.6%    0.6%  T v8::internal::String::SlowEquals(v8::internal::Handle<v8::internal::String>, v8::internal::Handle<v8::internal::String>)
-      3    0.6%    0.6%  T v8::internal::IncrementalMarking::RecordWriteSlow(v8::internal::HeapObject*, v8::internal::HeapObjectReference**, v8::internal::Object*)
-      3    0.6%    0.6%  T v8::internal::Heap::Scavenge()
-      3    0.6%    0.6%  T v8::internal::Heap::AllocateRawWithLigthRetry(int, v8::internal::AllocationSpace, v8::internal::AllocationAlignment)
-      3    0.6%    0.6%  T v8::internal::Factory::NewConsString(v8::internal::Handle<v8::internal::String>, v8::internal::Handle<v8::internal::String>, int, bool)
-      3    0.6%    0.6%  T node::TTYWrap::New(v8::FunctionCallbackInfo<v8::Value> const&)
-      2    0.4%    0.4%  t void std::__1::__sort<v8::internal::EnumIndexComparator<v8::internal::NameDictionary>&, v8::base::AtomicElement<v8::internal::Smi*>*>(v8::base::AtomicElement<v8::internal::Smi*>*, v8::base::AtomicElement<v8::internal::Smi*>*, v8::internal::EnumIndexComparator<v8::internal::NameDictionary>&)
-      2    0.4%    0.4%  t void node::Buffer::(anonymous namespace)::StringSlice<(node::encoding)1>(v8::FunctionCallbackInfo<v8::Value> const&)
-      2    0.4%    0.4%  t v8::internal::interpreter::BytecodeGenerator::VisitNoStackOverflowCheck(v8::internal::AstNode*)
-      2    0.4%    0.4%  t v8::internal::HeapObjectIterator::Next()
-      2    0.4%    0.4%  t node::fs::Open(v8::FunctionCallbackInfo<v8::Value> const&)
-      2    0.4%    0.4%  t _mvm_allocate_pages
-      2    0.4%    0.4%  T v8::internal::String::GetFlatContent()
-      2    0.4%    0.4%  T v8::internal::ScopeInfo::Create(v8::internal::Isolate*, v8::internal::Zone*, v8::internal::Scope*, v8::internal::MaybeHandle<v8::internal::ScopeInfo>)
-      2    0.4%    0.4%  T v8::internal::Scope::LookupRecursive(v8::internal::ParseInfo*, v8::internal::VariableProxy*, v8::internal::Scope*)
-      2    0.4%    0.4%  T v8::internal::Factory::NewConsString(v8::internal::Handle<v8::internal::String>, v8::internal::Handle<v8::internal::String>)
-      2    0.4%    0.4%  T _proc_set_cpumon_params
-      1    0.2%    0.2%  t v8::internal::compiler::UnhandledSortHelper(v8::internal::compiler::LiveRange*, v8::internal::compiler::LiveRange*)
-      1    0.2%    0.2%  t v8::internal::ParserBase<v8::internal::Parser>::ParseFormalParameter(v8::internal::ParserFormalParameters*, bool*)
-      1    0.2%    0.2%  t v8::internal::ParserBase<v8::internal::Parser>::ParseBlock(v8::internal::ZoneList<v8::internal::AstRawString const*>*, bool*)
-      1    0.2%    0.2%  t v8::internal::Object::GetSimpleHash(v8::internal::Object*)
-      1    0.2%    0.2%  t v8::internal::MaybeHandle<v8::internal::Object> v8::internal::(anonymous namespace)::HandleApiCallHelper<false>(v8::internal::Isolate*, v8::internal::Handle<v8::internal::HeapObject>, v8::internal::Handle<v8::internal::HeapObject>, v8::internal::Handle<v8::internal::FunctionTemplateInfo>, v8::internal::Handle<v8::internal::Object>, v8::internal::BuiltinArguments)
-      1    0.2%    0.2%  t v8::internal::FixStaleLeftTrimmedHandlesVisitor::VisitRootPointers(v8::internal::Root, char const*, v8::internal::Object**, v8::internal::Object**)
-      1    0.2%    0.2%  t v8::internal::AllocationMemento* v8::internal::Heap::FindAllocationMemento<(v8::internal::Heap::FindMementoMode)0>(v8::internal::Map*, v8::internal::HeapObject*)
-      1    0.2%    0.2%  t v8::internal::(anonymous namespace)::CopyObjectToObjectElements(v8::internal::FixedArrayBase*, v8::internal::ElementsKind, unsigned int, v8::internal::FixedArrayBase*, v8::internal::ElementsKind, unsigned int, int)
-      1    0.2%    0.2%  t std::__1::ostreambuf_iterator<char, std::__1::char_traits<char> > std::__1::__pad_and_output<char, std::__1::ostreambuf_iterator<char, std::__1::char_traits<char> > >(std::__1::ostreambuf_iterator<char, std::__1::char_traits<char> >, char const*, char const*, char const*, std::__1::ios_base&, char)
-      1    0.2%    0.2%  t std::__1::basic_ostream<char, std::__1::char_traits<char> >& std::__1::__put_character_sequence<char, std::__1::char_traits<char> >(std::__1::basic_ostream<char, std::__1::char_traits<char> >&, char const*, unsigned long)
-      1    0.2%    0.2%  t node::fs::InternalModuleReadJSON(v8::FunctionCallbackInfo<v8::Value> const&)
-      1    0.2%    0.2%  t node::GetBinding(v8::FunctionCallbackInfo<v8::Value> const&)
-      1    0.2%    0.2%  t int v8::internal::BinarySearch<(v8::internal::SearchMode)0, v8::internal::TransitionArray>(v8::internal::TransitionArray*, v8::internal::Name*, int, int*)
-      1    0.2%    0.2%  t _tiny_malloc_should_clear
-      1    0.2%    0.2%  t _small_malloc_should_clear
-      1    0.2%    0.2%  t _mvm_allocate_pages_securely
-      1    0.2%    0.2%  t _map_images_nolock
-      1    0.2%    0.2%  t __pthread_main_thread_init
-      1    0.2%    0.2%  t ___vfprintf
-      1    0.2%    0.2%  T void v8::internal::LookupIterator::Start<false>()
-      1    0.2%    0.2%  T void v8::internal::EvacuateVisitorBase::RawMigrateObject<(v8::internal::EvacuateVisitorBase::MigrationMode)1>(v8::internal::EvacuateVisitorBase*, v8::internal::HeapObject*, v8::internal::HeapObject*, int, v8::internal::AllocationSpace)
-      1    0.2%    0.2%  T v8::internal::interpreter::BytecodeGenerator::VisitDeclarations(v8::internal::ThreadedList<v8::internal::Declaration>*)
-      1    0.2%    0.2%  T v8::internal::interpreter::BytecodeGenerator::VisitAssignment(v8::internal::Assignment*)
-      1    0.2%    0.2%  T v8::internal::interpreter::BytecodeArrayWriter::EmitBytecode(v8::internal::interpreter::BytecodeNode const*)
-      1    0.2%    0.2%  T v8::internal::interpreter::BytecodeArrayBuilder::LoadGlobal(v8::internal::AstRawString const*, int, v8::internal::TypeofMode)
-      1    0.2%    0.2%  T v8::internal::compiler::SourcePositionTable::GetSourcePosition(v8::internal::compiler::Node*) const
-      1    0.2%    0.2%  T v8::internal::compiler::NodeProperties::IsControlEdge(v8::internal::compiler::Edge)
-      1    0.2%    0.2%  T v8::internal::compiler::GraphReducer::ReduceTop()
-      1    0.2%    0.2%  T v8::internal::compiler::GraphReducer::ReduceNode(v8::internal::compiler::Node*)
-      1    0.2%    0.2%  T v8::internal::Zone::Zone(v8::internal::AccountingAllocator*, char const*, v8::internal::SegmentSize)
-      1    0.2%    0.2%  T v8::internal::StringTable::LookupStringIfExists_NoAllocate(v8::internal::String*)
-      1    0.2%    0.2%  T v8::internal::Scavenger::ScavengePage(v8::internal::MemoryChunk*)
-      1    0.2%    0.2%  T v8::internal::Scavenger::Process(v8::internal::OneshotBarrier*)
-      1    0.2%    0.2%  T v8::internal::Scanner::ScanNumber(bool)
-      1    0.2%    0.2%  T v8::internal::Runtime_StringEqual(int, v8::internal::Object**, v8::internal::Isolate*)
-      1    0.2%    0.2%  T v8::internal::ObjectLiteral::BuildConstantProperties(v8::internal::Isolate*)
-      1    0.2%    0.2%  T v8::internal::Object::AddDataProperty(v8::internal::LookupIterator*, v8::internal::Handle<v8::internal::Object>, v8::internal::PropertyAttributes, v8::internal::ShouldThrow, v8::internal::Object::StoreFromKeyed)
-      1    0.2%    0.2%  T v8::internal::NormalizedMapCache::Get(v8::internal::Handle<v8::internal::Map>, v8::internal::PropertyNormalizationMode)
-      1    0.2%    0.2%  T v8::internal::Map::RawCopy(v8::internal::Handle<v8::internal::Map>, int, int)
-      1    0.2%    0.2%  T v8::internal::Logger::NewEvent(char const*, void*, unsigned long)
-      1    0.2%    0.2%  T v8::internal::KeyAccumulator::CollectOwnPropertyNames(v8::internal::Handle<v8::internal::JSReceiver>, v8::internal::Handle<v8::internal::JSObject>)
-      1    0.2%    0.2%  T v8::internal::JSObject::FastPropertyAt(v8::internal::Handle<v8::internal::JSObject>, v8::internal::Representation, v8::internal::FieldIndex)
-      1    0.2%    0.2%  T v8::internal::IncrementalStringBuilder::IncrementalStringBuilder(v8::internal::Isolate*)
-      1    0.2%    0.2%  T v8::internal::IncrementalStringBuilder::AppendString(v8::internal::Handle<v8::internal::String>)
-      1    0.2%    0.2%  T v8::internal::IncrementalMarking::Step(unsigned long, v8::internal::IncrementalMarking::CompletionAction, v8::internal::StepOrigin, v8::internal::WorklistToProcess)
-      1    0.2%    0.2%  T v8::internal::IncrementalMarking::StartBlackAllocation()
-      1    0.2%    0.2%  T v8::internal::Heap::RightTrimFixedArray(v8::internal::FixedArrayBase*, int)
-      1    0.2%    0.2%  T v8::internal::Heap::AllocateRawWithRetryOrFail(int, v8::internal::AllocationSpace, v8::internal::AllocationAlignment)
-      1    0.2%    0.2%  T v8::internal::FastKeyAccumulator::GetKeysFast(v8::internal::GetKeysConversion)
-      1    0.2%    0.2%  T v8::internal::Factory::NewNoClosuresCell(v8::internal::Handle<v8::internal::HeapObject>)
-      1    0.2%    0.2%  T v8::internal::Factory::NewMap(v8::internal::InstanceType, int, v8::internal::ElementsKind, int)
-      1    0.2%    0.2%  T v8::internal::Factory::NewLoadHandler(int)
-      1    0.2%    0.2%  T v8::internal::Factory::NewFixedArrayWithFiller(v8::internal::Heap::RootListIndex, int, v8::internal::Object*, v8::internal::PretenureFlag)
-      1    0.2%    0.2%  T v8::internal::Dictionary<v8::internal::NameDictionary, v8::internal::NameDictionaryShape>::NumberOfEnumerableProperties()
-      1    0.2%    0.2%  T v8::internal::Deserializer<v8::internal::DefaultDeserializerAllocator>::PostProcessNewObject(v8::internal::HeapObject*, int)
-      1    0.2%    0.2%  T v8::internal::DescriptorArray::Allocate(v8::internal::Isolate*, int, int, v8::internal::PretenureFlag)
-      1    0.2%    0.2%  T v8::internal::Code::InvalidateEmbeddedObjects()
-      1    0.2%    0.2%  T v8::internal::BoilerplateDescription::name(int) const
-      1    0.2%    0.2%  T v8::internal::BaseNameDictionary<v8::internal::NameDictionary, v8::internal::NameDictionaryShape>::EnsureCapacity(v8::internal::Handle<v8::internal::NameDictionary>, int)
-      1    0.2%    0.2%  T v8::internal::BaseNameDictionary<v8::internal::NameDictionary, v8::internal::NameDictionaryShape>::CopyEnumKeysTo(v8::internal::Handle<v8::internal::NameDictionary>, v8::internal::Handle<v8::internal::FixedArray>, v8::internal::KeyCollectionMode, v8::internal::KeyAccumulator*)
-      1    0.2%    0.2%  T v8::internal::Accessors::FunctionPrototypeSetter(v8::Local<v8::Name>, v8::Local<v8::Value>, v8::PropertyCallbackInfo<v8::Boolean> const&)
-      1    0.2%    0.2%  T std::__1::mutex::lock()
-      1    0.2%    0.2%  T node::EnvGetter(v8::Local<v8::Name>, v8::PropertyCallbackInfo<v8::Value> const&)
-      1    0.2%    0.2%  T _vfprintf_l
-      1    0.2%    0.2%  T _thread_get_state
-      1    0.2%    0.2%  T _mach_vm_purgable_control
-      1    0.2%    0.2%  T _fprintf
-      1    0.2%    0.2%  T _dprintf
-      1    0.2%    0.2%  T _CFStringFindWithOptionsAndLocale
+     10    2.0%    4.0%  T _host_get_io_master
+      3    0.6%    1.2%  T ___pthread_init
+      2    0.4%    0.8%  t __malloc_initialize
+      2    0.4%    0.8%  T ___process_policy
+      1    0.2%    0.4%  t std::__1::locale::__imp::use_facet(long) const
+      1    0.2%    0.4%  t _tiny_malloc_from_free_list
+      1    0.2%    0.4%  t _small_malloc_should_clear
+      1    0.2%    0.4%  t _mvm_aslr_init
+      1    0.2%    0.4%  t _malloc_zone_register_while_locked
+      1    0.2%    0.4%  t _lflush
+      1    0.2%    0.4%  t __vdprintf
+      1    0.2%    0.4%  t __pthread_mutex_lock_init_slow
+      1    0.2%    0.4%  T _semaphore_destroy
+      1    0.2%    0.4%  T _proc_name
+      1    0.2%    0.4%  T _malloc_zone_malloc
+      1    0.2%    0.4%  T _malloc
+      1    0.2%    0.4%  T _link_addr
+      1    0.2%    0.4%  T _catgets
+      1    0.2%    0.4%  T _NXHashInsert
+      1    0.2%    0.4%  T _CFStringFindWithOptionsAndLocale
 
  [Summary]:
    ticks  total  nonlib   name
-    202   40.6%   42.6%  JavaScript
-    259   52.1%   54.6%  C++
-     34    6.8%    7.2%  GC
-     23    4.6%          Shared libraries
+    202   40.6%   81.5%  JavaScript
+     33    6.6%   13.3%  C++
+     34    6.8%   13.7%  GC
+    249   50.1%          Shared libraries
      13    2.6%          Unaccounted
 
  [C++ entry points]:
    ticks    cpp   total   name
-     62   27.1%   12.5%  T v8::internal::Builtin_HandleApiCall(int, v8::internal::Object**, v8::internal::Isolate*)
-     54   23.6%   10.9%  T v8::internal::Builtin_FunctionPrototypeToString(int, v8::internal::Object**, v8::internal::Isolate*)
-     27   11.8%    5.4%  T v8::internal::Runtime_CompileLazy(int, v8::internal::Object**, v8::internal::Isolate*)
-     26   11.4%    5.2%  T v8::internal::Runtime_StringEqual(int, v8::internal::Object**, v8::internal::Isolate*)
-      6    2.6%    1.2%  T v8::internal::Runtime_ForInEnumerate(int, v8::internal::Object**, v8::internal::Isolate*)
-      5    2.2%    1.0%  T v8::internal::Runtime_InterpreterDeserializeLazy(int, v8::internal::Object**, v8::internal::Isolate*)
-      5    2.2%    1.0%  T v8::internal::Runtime_CompileOptimized_Concurrent(int, v8::internal::Object**, v8::internal::Isolate*)
-      5    2.2%    1.0%  T v8::internal::IncrementalMarking::RecordWriteSlow(v8::internal::HeapObject*, v8::internal::HeapObjectReference**, v8::internal::Object*)
-      4    1.7%    0.8%  T v8::internal::Runtime_SetProperty(int, v8::internal::Object**, v8::internal::Isolate*)
-      4    1.7%    0.8%  T v8::internal::Runtime_AddDictionaryProperty(int, v8::internal::Object**, v8::internal::Isolate*)
-      4    1.7%    0.8%  T v8::internal::IncrementalMarking::WhiteToGreyAndPush(v8::internal::HeapObject*)
-      3    1.3%    0.6%  T v8::internal::Runtime_StoreIC_Miss(int, v8::internal::Object**, v8::internal::Isolate*)
-      3    1.3%    0.6%  T v8::internal::Runtime_StackGuard(int, v8::internal::Object**, v8::internal::Isolate*)
-      2    0.9%    0.4%  T v8::internal::Runtime_LoadIC_Miss(int, v8::internal::Object**, v8::internal::Isolate*)
-      2    0.9%    0.4%  T v8::internal::Runtime_KeyedStoreIC_Miss(int, v8::internal::Object**, v8::internal::Isolate*)
-      2    0.9%    0.4%  T v8::internal::JSFunction::ToString(v8::internal::Handle<v8::internal::JSFunction>)
-      2    0.9%    0.4%  T v8::internal::Builtin_ObjectGetOwnPropertyDescriptors(int, v8::internal::Object**, v8::internal::Isolate*)
-      2    0.9%    0.4%  T v8::internal::Builtin_ObjectDefineProperties(int, v8::internal::Object**, v8::internal::Isolate*)
-      1    0.4%    0.2%  T v8::internal::StringTable::LookupStringIfExists_NoAllocate(v8::internal::String*)
-      1    0.4%    0.2%  T v8::internal::Runtime_ObjectKeys(int, v8::internal::Object**, v8::internal::Isolate*)
-      1    0.4%    0.2%  T v8::internal::Runtime_ObjectCreate(int, v8::internal::Object**, v8::internal::Isolate*)
-      1    0.4%    0.2%  T v8::internal::Runtime_NotifyDeoptimized(int, v8::internal::Object**, v8::internal::Isolate*)
-      1    0.4%    0.2%  T v8::internal::Runtime_MapGrow(int, v8::internal::Object**, v8::internal::Isolate*)
-      1    0.4%    0.2%  T v8::internal::Runtime_LoadPropertyWithInterceptor(int, v8::internal::Object**, v8::internal::Isolate*)
-      1    0.4%    0.2%  T v8::internal::Runtime_KeyedGetProperty(int, v8::internal::Object**, v8::internal::Isolate*)
-      1    0.4%    0.2%  T v8::internal::Runtime_DefineDataPropertyInLiteral(int, v8::internal::Object**, v8::internal::Isolate*)
-      1    0.4%    0.2%  T v8::internal::Runtime_CreateRegExpLiteral(int, v8::internal::Object**, v8::internal::Isolate*)
-      1    0.4%    0.2%  T v8::internal::Runtime_CreateObjectLiteral(int, v8::internal::Object**, v8::internal::Isolate*)
-      1    0.4%    0.2%  T _flock
+      6   35.3%    1.2%  T _host_get_io_master
+      2   11.8%    0.4%  t __malloc_initialize
+      2   11.8%    0.4%  T ___pthread_init
+      1    5.9%    0.2%  t _small_malloc_should_clear
+      1    5.9%    0.2%  t _mvm_aslr_init
+      1    5.9%    0.2%  t _malloc_zone_register_while_locked
+      1    5.9%    0.2%  t __vdprintf
+      1    5.9%    0.2%  T _malloc_zone_malloc
+      1    5.9%    0.2%  T _malloc
+      1    5.9%    0.2%  T _link_addr
 
  [Bottom up (heavy) profile]:
   Note: percentage shows a share of a particular caller in the total
@@ -220,6 +122,117 @@ Statistical profiling result from ./profile.log, (497 ticks, 13 unaccounted, 0 e
   Callers occupying less than 1.0% are not shown.
 
    ticks parent  name
+    229   46.1%  /Users/mattjinkens/.nvm/versions/node/v10.17.0/bin/node
+    193   84.3%    /Users/mattjinkens/.nvm/versions/node/v10.17.0/bin/node
+     73   37.8%      LazyCompile: *isPlainObject /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:12036:27
+     73  100.0%        LazyCompile: *<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:3600:31
+     73  100.0%          LazyCompile: *<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:3600:31
+     38   52.1%            LazyCompile: *<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:3600:31
+     35   47.9%            LazyCompile: *<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:4897:22
+     22   11.4%      LazyCompile: ~NativeModule.compile internal/bootstrap/loaders.js:303:44
+     22  100.0%        LazyCompile: ~NativeModule.require internal/bootstrap/loaders.js:150:34
+      3   13.6%          Script: ~<anonymous> util.js:1:11
+      3  100.0%            LazyCompile: ~NativeModule.compile internal/bootstrap/loaders.js:303:44
+      2    9.1%          Script: ~<anonymous> internal/process/main_thread_only.js:1:11
+      2  100.0%            LazyCompile: ~NativeModule.compile internal/bootstrap/loaders.js:303:44
+      2    9.1%          Script: ~<anonymous> internal/fs/streams.js:1:11
+      2  100.0%            LazyCompile: ~NativeModule.compile internal/bootstrap/loaders.js:303:44
+      1    4.5%          Script: ~<anonymous> tty.js:1:11
+      1  100.0%            LazyCompile: ~NativeModule.compile internal/bootstrap/loaders.js:303:44
+      1    4.5%          Script: ~<anonymous> stream.js:1:11
+      1  100.0%            LazyCompile: ~NativeModule.compile internal/bootstrap/loaders.js:303:44
+      1    4.5%          Script: ~<anonymous> internal/util/inspect.js:1:11
+      1  100.0%            LazyCompile: ~NativeModule.compile internal/bootstrap/loaders.js:303:44
+      1    4.5%          Script: ~<anonymous> internal/modules/cjs/loader.js:1:11
+      1  100.0%            LazyCompile: ~NativeModule.compile internal/bootstrap/loaders.js:303:44
+      1    4.5%          Script: ~<anonymous> internal/modules/cjs/helpers.js:1:11
+      1  100.0%            LazyCompile: ~NativeModule.compile internal/bootstrap/loaders.js:303:44
+      1    4.5%          Script: ~<anonymous> internal/async_hooks.js:1:11
+      1  100.0%            LazyCompile: ~NativeModule.compile internal/bootstrap/loaders.js:303:44
+      1    4.5%          Script: ~<anonymous> fs.js:1:11
+      1  100.0%            LazyCompile: ~NativeModule.compile internal/bootstrap/loaders.js:303:44
+      1    4.5%          Script: ~<anonymous> assert.js:1:11
+      1  100.0%            LazyCompile: ~NativeModule.compile internal/bootstrap/loaders.js:303:44
+      1    4.5%          Script: ~<anonymous> _stream_readable.js:1:11
+      1  100.0%            LazyCompile: ~NativeModule.compile internal/bootstrap/loaders.js:303:44
+      1    4.5%          LazyCompile: ~startup internal/bootstrap/node.js:30:19
+      1  100.0%            Script: ~bootstrapNodeJSCore internal/bootstrap/node.js:15:30
+      1    4.5%          LazyCompile: ~setupProcessObject internal/bootstrap/node.js:331:30
+      1  100.0%            LazyCompile: ~startup internal/bootstrap/node.js:30:19
+      1    4.5%          LazyCompile: ~setupProcessFatal internal/bootstrap/node.js:479:29
+      1  100.0%            LazyCompile: ~startup internal/bootstrap/node.js:30:19
+      1    4.5%          LazyCompile: ~setupGlobalTimeouts internal/bootstrap/node.js:394:31
+      1  100.0%            LazyCompile: ~startup internal/bootstrap/node.js:30:19
+      1    4.5%          LazyCompile: ~setupGlobalConsole internal/bootstrap/node.js:404:30
+      1  100.0%            LazyCompile: ~startup internal/bootstrap/node.js:30:19
+      1    4.5%          LazyCompile: ~Module._load internal/modules/cjs/loader.js:557:24
+      1  100.0%            LazyCompile: ~Module.require internal/modules/cjs/loader.js:686:36
+     22   11.4%      LazyCompile: ~Module._compile internal/modules/cjs/loader.js:705:37
+     22  100.0%        LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:787:37
+     22  100.0%          LazyCompile: ~Module.load internal/modules/cjs/loader.js:645:33
+     22  100.0%            LazyCompile: ~tryModuleLoad internal/modules/cjs/loader.js:590:23
+     10    5.2%      LazyCompile: *assignMergeValue /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:2454:30
+     10  100.0%        LazyCompile: *<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:3600:31
+     10  100.0%          LazyCompile: *<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:3600:31
+      6   60.0%            LazyCompile: *<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:4897:22
+      4   40.0%            LazyCompile: *<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:3600:31
+      8    4.1%      LazyCompile: ~stat internal/modules/cjs/loader.js:85:14
+      5   62.5%        LazyCompile: ~Module._findPath internal/modules/cjs/loader.js:275:28
+      5  100.0%          LazyCompile: ~Module._resolveFilename internal/modules/cjs/loader.js:602:35
+      5  100.0%            LazyCompile: ~Module._load internal/modules/cjs/loader.js:557:24
+      3   37.5%        LazyCompile: ~tryFile internal/modules/cjs/loader.js:232:17
+      2   66.7%          LazyCompile: ~tryExtensions internal/modules/cjs/loader.js:247:23
+      2  100.0%            LazyCompile: ~Module._findPath internal/modules/cjs/loader.js:275:28
+      1   33.3%          LazyCompile: ~tryPackage internal/modules/cjs/loader.js:212:20
+      1  100.0%            LazyCompile: ~Module._findPath internal/modules/cjs/loader.js:275:28
+      7    3.6%      LazyCompile: *keysIn /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:13333:20
+      7  100.0%        LazyCompile: *<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:3600:31
+      7  100.0%          LazyCompile: *<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:4897:22
+      7  100.0%            LazyCompile: ~baseMerge /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:3596:23
+      3    1.6%      LazyCompile: ~WriteStream tty.js:78:21
+      3  100.0%        LazyCompile: ~createWritableStdioStream internal/process/stdio.js:177:35
+      2   66.7%          LazyCompile: ~getStdout internal/process/stdio.js:37:21
+      2  100.0%            Script: ~<anonymous> console.js:1:11
+      1   33.3%          LazyCompile: ~getStderr internal/process/stdio.js:49:21
+      1  100.0%            Script: ~<anonymous> console.js:1:11
+      3    1.6%      LazyCompile: ~<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/dist/index.js:1:2159
+      3  100.0%        LazyCompile: ~<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/dist/index.js:1:2138
+      3  100.0%          Builtin: ArrayReduce
+      3  100.0%            LazyCompile: ~i /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/dist/index.js:1:2094
+      2    1.0%      LazyCompile: ~toRealPath internal/modules/cjs/loader.js:240:20
+      1   50.0%        LazyCompile: ~tryFile internal/modules/cjs/loader.js:232:17
+      1  100.0%          LazyCompile: ~tryExtensions internal/modules/cjs/loader.js:247:23
+      1  100.0%            LazyCompile: ~Module._findPath internal/modules/cjs/loader.js:275:28
+      1   50.0%        LazyCompile: ~Module._findPath internal/modules/cjs/loader.js:275:28
+      1  100.0%          LazyCompile: ~Module._resolveFilename internal/modules/cjs/loader.js:602:35
+      1  100.0%            LazyCompile: ~Module._load internal/modules/cjs/loader.js:557:24
+      2    1.0%      LazyCompile: ~stringSlice buffer.js:589:21
+      2  100.0%        LazyCompile: ~toString buffer.js:643:46
+      2  100.0%          LazyCompile: ~readFileSync fs.js:340:22
+      2  100.0%            LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:787:37
+      2    1.0%      LazyCompile: ~resolve path.js:1068:28
+      1   50.0%        LazyCompile: ~Module._initPaths internal/modules/cjs/loader.js:844:29
+      1  100.0%          Script: ~<anonymous> internal/modules/cjs/loader.js:1:11
+      1  100.0%            LazyCompile: ~NativeModule.compile internal/bootstrap/loaders.js:303:44
+      1   50.0%        LazyCompile: ~Module._findPath internal/modules/cjs/loader.js:275:28
+      1  100.0%          LazyCompile: ~Module._resolveFilename internal/modules/cjs/loader.js:602:35
+      1  100.0%            LazyCompile: ~Module._load internal/modules/cjs/loader.js:557:24
+      2    1.0%      LazyCompile: ~openSync fs.js:433:18
+      2  100.0%        LazyCompile: ~readFileSync fs.js:340:22
+      2  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:787:37
+      2  100.0%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:645:33
+      2    1.0%      Eval: ~runInContext /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:1406:44
+      2  100.0%        Eval: ~<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:9:11
+      2  100.0%          Eval: ~<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:1:1
+      2  100.0%            LazyCompile: ~Module._compile internal/modules/cjs/loader.js:705:37
+      3    1.3%    LazyCompile: *stackSet /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:2350:22
+      3  100.0%      LazyCompile: *<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:3600:31
+      3  100.0%        LazyCompile: *<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:3600:31
+      2   66.7%          LazyCompile: *<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:4897:22
+      2  100.0%            LazyCompile: ~baseMerge /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:3596:23
+      1   33.3%          LazyCompile: *<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:3600:31
+      1  100.0%            LazyCompile: *<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:4897:22
+
      26    5.2%  Builtin: KeyedLoadIC_Megamorphic
      15   57.7%    LazyCompile: *<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:3600:31
      12   80.0%      LazyCompile: *<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:3600:31
@@ -273,62 +286,6 @@ Statistical profiling result from ./profile.log, (497 ticks, 13 unaccounted, 0 e
       3  100.0%          LazyCompile: ~<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:4835:31
       3  100.0%            LazyCompile: ~apply /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:471:17
 
-     22    4.4%  t v8::internal::(anonymous namespace)::NativeCodeFunctionSourceString(v8::internal::Handle<v8::internal::SharedFunctionInfo>)
-     22  100.0%    T v8::internal::Builtin_FunctionPrototypeToString(int, v8::internal::Object**, v8::internal::Isolate*)
-     22  100.0%      LazyCompile: *isPlainObject /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:12036:27
-     22  100.0%        LazyCompile: *<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:3600:31
-     22  100.0%          LazyCompile: *<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:3600:31
-     14   63.6%            LazyCompile: *<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:3600:31
-      8   36.4%            LazyCompile: *<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:4897:22
-
-     22    4.4%  T node::contextify::ContextifyScript::New(v8::FunctionCallbackInfo<v8::Value> const&)
-     22  100.0%    T v8::internal::Builtin_HandleApiCall(int, v8::internal::Object**, v8::internal::Isolate*)
-     22  100.0%      LazyCompile: ~NativeModule.compile internal/bootstrap/loaders.js:303:44
-     22  100.0%        LazyCompile: ~NativeModule.require internal/bootstrap/loaders.js:150:34
-      3   13.6%          Script: ~<anonymous> util.js:1:11
-      3  100.0%            LazyCompile: ~NativeModule.compile internal/bootstrap/loaders.js:303:44
-      2    9.1%          Script: ~<anonymous> internal/process/main_thread_only.js:1:11
-      2  100.0%            LazyCompile: ~NativeModule.compile internal/bootstrap/loaders.js:303:44
-      2    9.1%          Script: ~<anonymous> internal/fs/streams.js:1:11
-      2  100.0%            LazyCompile: ~NativeModule.compile internal/bootstrap/loaders.js:303:44
-      1    4.5%          Script: ~<anonymous> tty.js:1:11
-      1  100.0%            LazyCompile: ~NativeModule.compile internal/bootstrap/loaders.js:303:44
-      1    4.5%          Script: ~<anonymous> stream.js:1:11
-      1  100.0%            LazyCompile: ~NativeModule.compile internal/bootstrap/loaders.js:303:44
-      1    4.5%          Script: ~<anonymous> internal/util/inspect.js:1:11
-      1  100.0%            LazyCompile: ~NativeModule.compile internal/bootstrap/loaders.js:303:44
-      1    4.5%          Script: ~<anonymous> internal/modules/cjs/loader.js:1:11
-      1  100.0%            LazyCompile: ~NativeModule.compile internal/bootstrap/loaders.js:303:44
-      1    4.5%          Script: ~<anonymous> internal/modules/cjs/helpers.js:1:11
-      1  100.0%            LazyCompile: ~NativeModule.compile internal/bootstrap/loaders.js:303:44
-      1    4.5%          Script: ~<anonymous> internal/async_hooks.js:1:11
-      1  100.0%            LazyCompile: ~NativeModule.compile internal/bootstrap/loaders.js:303:44
-      1    4.5%          Script: ~<anonymous> fs.js:1:11
-      1  100.0%            LazyCompile: ~NativeModule.compile internal/bootstrap/loaders.js:303:44
-      1    4.5%          Script: ~<anonymous> assert.js:1:11
-      1  100.0%            LazyCompile: ~NativeModule.compile internal/bootstrap/loaders.js:303:44
-      1    4.5%          Script: ~<anonymous> _stream_readable.js:1:11
-      1  100.0%            LazyCompile: ~NativeModule.compile internal/bootstrap/loaders.js:303:44
-      1    4.5%          LazyCompile: ~startup internal/bootstrap/node.js:30:19
-      1  100.0%            Script: ~bootstrapNodeJSCore internal/bootstrap/node.js:15:30
-      1    4.5%          LazyCompile: ~setupProcessObject internal/bootstrap/node.js:331:30
-      1  100.0%            LazyCompile: ~startup internal/bootstrap/node.js:30:19
-      1    4.5%          LazyCompile: ~setupProcessFatal internal/bootstrap/node.js:479:29
-      1  100.0%            LazyCompile: ~startup internal/bootstrap/node.js:30:19
-      1    4.5%          LazyCompile: ~setupGlobalTimeouts internal/bootstrap/node.js:394:31
-      1  100.0%            LazyCompile: ~startup internal/bootstrap/node.js:30:19
-      1    4.5%          LazyCompile: ~setupGlobalConsole internal/bootstrap/node.js:404:30
-      1  100.0%            LazyCompile: ~startup internal/bootstrap/node.js:30:19
-      1    4.5%          LazyCompile: ~Module._load internal/modules/cjs/loader.js:557:24
-      1  100.0%            LazyCompile: ~Module.require internal/modules/cjs/loader.js:686:36
-
-     22    4.4%  T node::contextify::ContextifyContext::CompileFunction(v8::FunctionCallbackInfo<v8::Value> const&)
-     22  100.0%    T v8::internal::Builtin_HandleApiCall(int, v8::internal::Object**, v8::internal::Isolate*)
-     22  100.0%      LazyCompile: ~Module._compile internal/modules/cjs/loader.js:705:37
-     22  100.0%        LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:787:37
-     22  100.0%          LazyCompile: ~Module.load internal/modules/cjs/loader.js:645:33
-     22  100.0%            LazyCompile: ~tryModuleLoad internal/modules/cjs/loader.js:590:23
-
      22    4.4%  Builtin: KeyedStoreIC_Megamorphic
       9   40.9%    LazyCompile: *assignMergeValue /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:2454:30
       9  100.0%      LazyCompile: *<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:3600:31
@@ -367,43 +324,8 @@ Statistical profiling result from ./profile.log, (497 ticks, 13 unaccounted, 0 e
       1  100.0%          LazyCompile: ~NativeModule.compile internal/bootstrap/loaders.js:303:44
       1  100.0%            LazyCompile: ~NativeModule.require internal/bootstrap/loaders.js:150:34
 
-     16    3.2%  T v8::internal::IncrementalMarking::WhiteToGreyAndPush(v8::internal::HeapObject*)
-      5   31.3%    T v8::internal::Builtin_FunctionPrototypeToString(int, v8::internal::Object**, v8::internal::Isolate*)
-      5  100.0%      LazyCompile: *isPlainObject /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:12036:27
-      5  100.0%        LazyCompile: *<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:3600:31
-      5  100.0%          LazyCompile: *<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:3600:31
-      4   80.0%            LazyCompile: *<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:4897:22
-      1   20.0%            LazyCompile: *<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:3600:31
-      4   25.0%    T v8::internal::IncrementalMarking::RecordWriteSlow(v8::internal::HeapObject*, v8::internal::HeapObjectReference**, v8::internal::Object*)
-      4  100.0%      LazyCompile: *assignMergeValue /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:2454:30
-      4  100.0%        LazyCompile: *<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:3600:31
-      4  100.0%          LazyCompile: *<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:3600:31
-      4  100.0%            LazyCompile: *<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:3600:31
-      3   18.8%    LazyCompile: *stackSet /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:2350:22
-      3  100.0%      LazyCompile: *<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:3600:31
-      3  100.0%        LazyCompile: *<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:3600:31
-      2   66.7%          LazyCompile: *<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:4897:22
-      2  100.0%            LazyCompile: ~baseMerge /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:3596:23
-      1   33.3%          LazyCompile: *<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:3600:31
-      1  100.0%            LazyCompile: *<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:4897:22
-      2   12.5%    T v8::internal::Runtime_StringEqual(int, v8::internal::Object**, v8::internal::Isolate*)
-      2  100.0%      LazyCompile: *isPlainObject /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:12036:27
-      2  100.0%        LazyCompile: *<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:3600:31
-      2  100.0%          LazyCompile: *<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:3600:31
-      2  100.0%            LazyCompile: *<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:4897:22
-      1    6.3%    T v8::internal::Runtime_ForInEnumerate(int, v8::internal::Object**, v8::internal::Isolate*)
-      1  100.0%      LazyCompile: *keysIn /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:13333:20
-      1  100.0%        LazyCompile: *<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:3600:31
-      1  100.0%          LazyCompile: *<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:4897:22
-      1  100.0%            LazyCompile: ~baseMerge /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:3596:23
-      1    6.3%    Builtin: GrowFastSmiOrObjectElements
-      1  100.0%      LazyCompile: *<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:3600:31
-      1  100.0%        LazyCompile: *<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:3600:31
-      1  100.0%          LazyCompile: *<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:4897:22
-      1  100.0%            LazyCompile: ~baseMerge /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:3596:23
-
      13    2.6%  UNKNOWN
-      1    7.7%    T v8::internal::Runtime_CompileLazy(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    7.7%    /Users/mattjinkens/.nvm/versions/node/v10.17.0/bin/node
       1  100.0%      Builtin: CEntry_Return1_DontSaveFPRegs_ArgvOnStack_NoBuiltinExit
       1  100.0%        LazyCompile: ~w /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/immer/dist/immer.cjs.production.min.js:1:2007
       1  100.0%          LazyCompile: ~x /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/immer/dist/immer.cjs.production.min.js:1:1772
@@ -419,29 +341,25 @@ Statistical profiling result from ./profile.log, (497 ticks, 13 unaccounted, 0 e
       2  100.0%          LazyCompile: *<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:4897:22
       2  100.0%            LazyCompile: ~baseMerge /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:3596:23
 
-     11    2.2%  t void v8::internal::Worklist<v8::internal::HeapObject*, 64>::Update<v8::internal::IncrementalMarking::UpdateMarkingWorklistAfterScavenge()::$_0>(v8::internal::IncrementalMarking::UpdateMarkingWorklistAfterScavenge()::$_0)
-
-     10    2.0%  T _flock
-      3   30.0%    T v8::internal::Runtime_CompileLazy(int, v8::internal::Object**, v8::internal::Isolate*)
-      1   33.3%      LazyCompile: ~sortFields /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/yup/lib/util/sortFields.js:18:20
+     10    2.0%  T _host_get_io_master
+      5   50.0%    /Users/mattjinkens/.nvm/versions/node/v10.17.0/bin/node
+      1   20.0%      Script: ~bootstrapInternalLoaders internal/bootstrap/loaders.js:42:35
+      1   20.0%      LazyCompile: ~sortFields /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/yup/lib/util/sortFields.js:18:20
       1  100.0%        LazyCompile: ~shape /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/yup/lib/object.js:249:24
       1  100.0%          LazyCompile: ~<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/yup/lib/object.js:111:30
       1  100.0%            LazyCompile: ~withMutation /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/yup/lib/mixed.js:143:38
-      1   33.3%      LazyCompile: ~Socket._write net.js:725:35
+      1   20.0%      LazyCompile: ~Socket._write net.js:725:35
       1  100.0%        LazyCompile: ~doWrite _stream_writable.js:405:17
       1  100.0%          LazyCompile: ~writeOrBuffer _stream_writable.js:365:23
       1  100.0%            LazyCompile: ~Writable.write _stream_writable.js:273:36
-      1   33.3%      Eval: ~runInContext /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:1406:44
+      1   20.0%      Eval: ~runInContext /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:1406:44
       1  100.0%        Eval: ~<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:9:11
       1  100.0%          Eval: ~<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:1:1
       1  100.0%            LazyCompile: ~Module._compile internal/modules/cjs/loader.js:705:37
-      1   10.0%    T v8::internal::Runtime_StackGuard(int, v8::internal::Object**, v8::internal::Isolate*)
-      1  100.0%      Builtin: ObjectConstructor
+      1   20.0%      Builtin: ObjectConstructor
       1  100.0%        LazyCompile: *<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:3600:31
       1  100.0%          LazyCompile: *<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:3600:31
       1  100.0%            LazyCompile: *<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:3600:31
-      1   10.0%    T v8::internal::Runtime_InterpreterDeserializeLazy(int, v8::internal::Object**, v8::internal::Isolate*)
-      1  100.0%      Script: ~bootstrapInternalLoaders internal/bootstrap/loaders.js:42:35
       1   10.0%    LazyCompile: ~overRest /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:6546:22
       1  100.0%      LazyCompile: ~flatRest /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:5840:22
       1  100.0%        Eval: ~runInContext /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:1406:44
@@ -489,25 +407,22 @@ Statistical profiling result from ./profile.log, (497 ticks, 13 unaccounted, 0 e
       1  100.0%            LazyCompile: *<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:4897:22
 
      10    2.0%  /usr/lib/system/libsystem_platform.dylib
-      5   50.0%    T v8::internal::Runtime_StringEqual(int, v8::internal::Object**, v8::internal::Isolate*)
-      5  100.0%      LazyCompile: *isPlainObject /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:12036:27
+      8   80.0%    /Users/mattjinkens/.nvm/versions/node/v10.17.0/bin/node
+      5   62.5%      LazyCompile: *isPlainObject /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:12036:27
       5  100.0%        LazyCompile: *<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:3600:31
       4   80.0%          LazyCompile: *<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:3600:31
       4  100.0%            LazyCompile: *<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:3600:31
       1   20.0%          LazyCompile: *<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:4897:22
       1  100.0%            LazyCompile: ~baseMerge /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:3596:23
-      1   10.0%    T v8::internal::Runtime_StackGuard(int, v8::internal::Object**, v8::internal::Isolate*)
-      1  100.0%      LazyCompile: *baseIsArguments /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:3227:29
-      1  100.0%        LazyCompile: *<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:3600:31
-      1  100.0%          LazyCompile: *<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:3600:31
-      1  100.0%            LazyCompile: *<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:4897:22
-      1   10.0%    T v8::internal::Runtime_CompileOptimized_Concurrent(int, v8::internal::Object**, v8::internal::Isolate*)
-      1  100.0%      LazyCompile: ~listCacheDelete /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:2040:29
+      1   12.5%      Script: ~bootstrapNodeJSCore internal/bootstrap/node.js:15:30
+      1   12.5%      LazyCompile: ~listCacheDelete /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:2040:29
       1  100.0%        LazyCompile: ~stackDelete /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:2306:25
       1  100.0%          LazyCompile: ~baseMergeDeep /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:3633:27
       1  100.0%            LazyCompile: ~<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:3600:31
-      1   10.0%    T v8::internal::Runtime_CompileLazy(int, v8::internal::Object**, v8::internal::Isolate*)
-      1  100.0%      Script: ~bootstrapNodeJSCore internal/bootstrap/node.js:15:30
+      1   12.5%      LazyCompile: *baseIsArguments /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:3227:29
+      1  100.0%        LazyCompile: *<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:3600:31
+      1  100.0%          LazyCompile: *<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:3600:31
+      1  100.0%            LazyCompile: *<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:4897:22
 
       9    1.8%  Builtin: InterpreterEntryTrampoline
       2   22.2%    LazyCompile: ~i.produce /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/immer/dist/immer.cjs.production.min.js:1:12478
@@ -551,31 +466,6 @@ Statistical profiling result from ./profile.log, (497 ticks, 13 unaccounted, 0 e
       1  100.0%          LazyCompile: *<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:4897:22
       1  100.0%            LazyCompile: ~baseMerge /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:3596:23
 
-      8    1.6%  t node::fs::InternalModuleStat(v8::FunctionCallbackInfo<v8::Value> const&)
-      8  100.0%    T v8::internal::Builtin_HandleApiCall(int, v8::internal::Object**, v8::internal::Isolate*)
-      8  100.0%      LazyCompile: ~stat internal/modules/cjs/loader.js:85:14
-      5   62.5%        LazyCompile: ~Module._findPath internal/modules/cjs/loader.js:275:28
-      5  100.0%          LazyCompile: ~Module._resolveFilename internal/modules/cjs/loader.js:602:35
-      5  100.0%            LazyCompile: ~Module._load internal/modules/cjs/loader.js:557:24
-      3   37.5%        LazyCompile: ~tryFile internal/modules/cjs/loader.js:232:17
-      2   66.7%          LazyCompile: ~tryExtensions internal/modules/cjs/loader.js:247:23
-      2  100.0%            LazyCompile: ~Module._findPath internal/modules/cjs/loader.js:275:28
-      1   33.3%          LazyCompile: ~tryPackage internal/modules/cjs/loader.js:212:20
-      1  100.0%            LazyCompile: ~Module._findPath internal/modules/cjs/loader.js:275:28
-
-      8    1.6%  T v8::internal::JSFunction::ToString(v8::internal::Handle<v8::internal::JSFunction>)
-      6   75.0%    T v8::internal::Builtin_FunctionPrototypeToString(int, v8::internal::Object**, v8::internal::Isolate*)
-      6  100.0%      LazyCompile: *isPlainObject /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:12036:27
-      6  100.0%        LazyCompile: *<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:3600:31
-      6  100.0%          LazyCompile: *<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:3600:31
-      3   50.0%            LazyCompile: *<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:4897:22
-      3   50.0%            LazyCompile: *<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:3600:31
-      2   25.0%    LazyCompile: *assignMergeValue /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:2454:30
-      2  100.0%      T v8::internal::Builtin_FunctionPrototypeToString(int, v8::internal::Object**, v8::internal::Isolate*)
-      2  100.0%        LazyCompile: *isPlainObject /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:12036:27
-      2  100.0%          LazyCompile: *<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:3600:31
-      2  100.0%            LazyCompile: *<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:3600:31
-
       8    1.6%  Builtin: RecordWrite
       3   37.5%    LazyCompile: *assignMergeValue /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:2454:30
       3  100.0%      LazyCompile: *<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:3600:31
@@ -610,61 +500,6 @@ Statistical profiling result from ./profile.log, (497 ticks, 13 unaccounted, 0 e
       1  100.0%        LazyCompile: *baseMergeDeep /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:3633:27
       1  100.0%          LazyCompile: *baseMerge /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:3596:23
       1  100.0%            LazyCompile: ~<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:13437:40
-
-      7    1.4%  /usr/lib/system/libsystem_pthread.dylib
-      2   28.6%    T v8::internal::Runtime_InterpreterDeserializeLazy(int, v8::internal::Object**, v8::internal::Isolate*)
-      1   50.0%      Script: ~<anonymous> internal/util.js:1:11
-      1  100.0%        LazyCompile: ~NativeModule.compile internal/bootstrap/loaders.js:303:44
-      1  100.0%          LazyCompile: ~NativeModule.require internal/bootstrap/loaders.js:150:34
-      1  100.0%            Script: ~<anonymous> internal/util/inspect.js:1:11
-      1   50.0%      LazyCompile: ~hrtime internal/process/per_thread.js:100:35
-      1  100.0%        LazyCompile: ~now perf_hooks.js:132:13
-      1  100.0%          LazyCompile: ~now perf_hooks.js:368:6
-      1  100.0%            LazyCompile: ~test /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/benchmark/index.js:35:14
-      1   14.3%    T v8::internal::Runtime_CompileLazy(int, v8::internal::Object**, v8::internal::Isolate*)
-      1  100.0%      LazyCompile: ~BooleanSchema /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/yup/lib/boolean.js:15:23
-      1  100.0%        LazyCompile: ~BooleanSchema /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/yup/lib/boolean.js:15:23
-      1  100.0%          LazyCompile: ~<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/dist/index.js:1:1474
-      1  100.0%            LazyCompile: ~r /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/dist/index.js:1:471
-      1   14.3%    LazyCompile: *assignMergeValue /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:2454:30
-      1  100.0%      LazyCompile: *<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:3600:31
-      1  100.0%        LazyCompile: *<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:3600:31
-      1  100.0%          LazyCompile: *<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:4897:22
-      1  100.0%            LazyCompile: ~baseMerge /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:3596:23
-
-      6    1.2%  t v8::internal::Heap::AllocateRaw(int, v8::internal::AllocationSpace, v8::internal::AllocationAlignment)
-      4   66.7%    T v8::internal::Builtin_FunctionPrototypeToString(int, v8::internal::Object**, v8::internal::Isolate*)
-      4  100.0%      LazyCompile: *isPlainObject /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:12036:27
-      4  100.0%        LazyCompile: *<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:3600:31
-      4  100.0%          LazyCompile: *<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:3600:31
-      2   50.0%            LazyCompile: *<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:4897:22
-      2   50.0%            LazyCompile: *<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:3600:31
-      2   33.3%    T v8::internal::Runtime_StringEqual(int, v8::internal::Object**, v8::internal::Isolate*)
-      2  100.0%      LazyCompile: *isPlainObject /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:12036:27
-      2  100.0%        LazyCompile: *<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:3600:31
-      2  100.0%          LazyCompile: *<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:3600:31
-      2  100.0%            LazyCompile: *<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:4897:22
-
-      6    1.2%  T v8::internal::Factory::NewRawOneByteString(int, v8::internal::PretenureFlag)
-      4   66.7%    T v8::internal::Builtin_FunctionPrototypeToString(int, v8::internal::Object**, v8::internal::Isolate*)
-      4  100.0%      LazyCompile: *isPlainObject /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:12036:27
-      4  100.0%        LazyCompile: *<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:3600:31
-      4  100.0%          LazyCompile: *<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:3600:31
-      2   50.0%            LazyCompile: *<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:4897:22
-      2   50.0%            LazyCompile: *<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:3600:31
-      2   33.3%    T v8::internal::Runtime_StringEqual(int, v8::internal::Object**, v8::internal::Isolate*)
-      2  100.0%      LazyCompile: *isPlainObject /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:12036:27
-      2  100.0%        LazyCompile: *<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:3600:31
-      2  100.0%          LazyCompile: *<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:3600:31
-      2  100.0%            LazyCompile: *<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:4897:22
-
-      5    1.0%  t void v8::internal::String::WriteToFlat<unsigned char>(v8::internal::String*, unsigned char*, int, int)
-      5  100.0%    T v8::internal::Runtime_StringEqual(int, v8::internal::Object**, v8::internal::Isolate*)
-      5  100.0%      LazyCompile: *isPlainObject /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:12036:27
-      5  100.0%        LazyCompile: *<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:3600:31
-      5  100.0%          LazyCompile: *<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:3600:31
-      3   60.0%            LazyCompile: *<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:3600:31
-      2   40.0%            LazyCompile: *<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:4897:22
 
       5    1.0%  Builtin: KeyedStoreIC
       3   60.0%    LazyCompile: *<anonymous> /Users/mattjinkens/Develop/ReactNative/i18n-jsfp/node_modules/lodash/lodash.js:3600:31

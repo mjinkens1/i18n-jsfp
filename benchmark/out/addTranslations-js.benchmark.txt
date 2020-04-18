@@ -1,7 +1,0 @@
-
-test: addTranslations-js
-load: 150
-iterations: 20
-test time: 0.393993380010128s
-time per iteration (avg): 0.0196996690005064s
-time per operation (avg): 0.13133112667004268ms
