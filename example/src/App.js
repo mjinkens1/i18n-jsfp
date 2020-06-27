@@ -2,7 +2,14 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-import { addTranslations, translate, setCurrentLocale } from 'i18n-jsfp';
+import {
+  addTranslations,
+  configure,
+  // setCurrentLocale,
+  translate,
+} from 'i18n-jsfp';
+
+configure({ useAutoScopePrefix: 'false' });
 
 const translations = {
   ar: {
@@ -111,48 +118,48 @@ const translations = {
 
 const strings = addTranslations(translations);
 
-const locales = [
-  {
-    countryCode: 'US',
-    languageTag: 'en-US',
-    languageCode: 'en',
-  },
-  {
-    countryCode: 'MX',
-    languageTag: 'es-MX',
-    languageCode: 'es',
-  },
-];
+// const locales = [
+//   {
+//     countryCode: 'US',
+//     languageTag: 'en-US',
+//     languageCode: 'en',
+//   },
+//   {
+//     countryCode: 'MX',
+//     languageTag: 'es-MX',
+//     languageCode: 'es',
+//   },
+// ];
 
 const reactLinks = {
   en: 'https://reactjs.org',
   es: 'https://es.reactjs.org/',
 };
 
-function* generator() {
-  const maxIndex = locales.length - 1;
-  let currentIndex = 0;
+// function* generator() {
+//   const maxIndex = locales.length - 1;
+//   let currentIndex = 0;
 
-  while (true) {
-    yield locales[currentIndex];
-    currentIndex = currentIndex === maxIndex ? 0 : currentIndex + 1;
-  }
-}
+//   while (true) {
+//     yield locales[currentIndex];
+//     currentIndex = currentIndex === maxIndex ? 0 : currentIndex + 1;
+//   }
+// }
 
-const iterator = generator();
+// const iterator = generator();
 
 function App() {
-  const [localeKey, setLocaleKey] = React.useState('en');
+  const [localeKey] = React.useState('en');
 
-  React.useEffect(() => {
-    const interval = setInterval(() => {
-      const { value } = iterator.next();
-      setCurrentLocale(value);
-      setLocaleKey(value.languageCode);
-    }, 5000);
+  // React.useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     const { value } = iterator.next();
+  //     setCurrentLocale(value);
+  //     setLocaleKey(value.languageCode);
+  //   }, 5000);
 
-    return () => clearInterval(interval);
-  }, []);
+  //   return () => clearInterval(interval);
+  // }, []);
 
   return (
     <div className="App">
