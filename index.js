@@ -1,1 +1,1 @@
-export * from './lib/functions';
+export * from './dist';
