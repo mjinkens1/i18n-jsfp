@@ -23,7 +23,7 @@
   "description": "",
   "dependencies": {
     "immer": "^6.0.3",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "ramda": "^0.27.0",
     "redux": "^4.0.5",
     "redux-devtools-extension": "^2.13.8",
