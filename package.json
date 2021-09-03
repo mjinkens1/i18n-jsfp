@@ -22,7 +22,7 @@
   "homepage": "https://github.com/mjinkens1/i18n-jsfp#readme",
   "description": "",
   "dependencies": {
-    "immer": "^6.0.3",
+    "immer": "^9.0.6",
     "lodash": "^4.17.19",
     "ramda": "^0.27.0",
     "redux": "^4.0.5",
